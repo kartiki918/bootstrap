@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First Bootstrap</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5eae67cf11.js" crossorigin="anonymous"></script>
+    <style>
+    .nav-bar{
+    color: blanchedalmond;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.nav-bar i{
+    float: right;
+}
+.carousel-item img{
+    height: 400px;
+}
+.box{
+    height: 50px;
+    width: 80px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container  p-2">
+        <nav class="navbar navbar-expand navbar-light">
+            <div class="container">
+            <a class="navbar-brand brand-title" href="#">Navbar</a>
+        <ul class="navbar-nav">
+          <li class="nav-item"> <a href="#" class="nav-link"> Demos <i class="fas fa-angle-down"></i></a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> Pages <i class="fas fa-angle-down"></i> </a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> Features <i class="fas fa-angle-down"></i></a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> Support <i class="fas fa-angle-down"></i></a></li>
+          <li><button type="button" class="btn btn-success pl-2 pr-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Modal Here</button></li>
+        </ul>
+      
+    </div>     
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="exampleModalLabel">Modal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                  This is my First Bootstrap program
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        </div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Nadal.jpg" class="d-block w-100 " alt="Nadal">
+              </div>
+              <div class="carousel-item">
+                <img src="Djokovic.jpg" class="d-block w-100 " alt="Djokovic">
+              </div>
+              <div class="carousel-item">
+                    <img src="Federer.jpg" class="d-block w-100 " alt="Federer">
+                  </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container">
+              <div class="row ">
+           
+            
+            <div class="card col-12 col-sm-6 col-l-4 m-3" style="width:250px">
+              <img class="card-img-top" src="tennis1.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Tennis</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">Card 1</a>
+              </div>
+            </div>
+            <div class="card col-12 col-sm-6 col-l-4 m-3" style="width:250px">
+                    <img class="card-img-top" src="tennis2.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Tennis</h4>
+                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                      <a href="#" class="btn btn-primary">Card 2</a>
+                    </div>
+                  </div>
+            <br>
+            <div class="card col-12 col-sm-6 col-l-4 m-3" style="width:250px">
+                    <img class="card-img-top" src="tennis3.jpeg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Tennis</h4>
+                <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">Card 3</a>
+              </div>
+              
+            </div>
+            <div class="card col-12 col-sm-6 col-l-4 m-3" style="width:250px">
+                    <img class="card-img-top" src="tennis5.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Tennis</h4>
+                <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">Card 4</a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="container col-sm-4 col-l-3m-3 text-center">
+            <p>
+                    
+       <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Click Here
+                    </button>
+                    
+                  </p>
+                </div>
+                  <div class="collapse text-center" id="collapseExample">
+                    <div class="card card-body">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </div>
+                  </div>
+                </div>
+      <div class="container bg-info text-center ">
+           
+            <input type="text" class=" col-md-3 m-3" id="fname" name="fname" placeholder="First Name"> 
+            
+            <input type="text" class=" col-md-3 m-3" id="fname" name="fname" placeholder="Last Name">
+    
+            <input type="email" class=" col-md-3 m-3" id="fname" name="fname" placeholder="Email">
+            
+            <input type="password" class=" col-md-3 m-3" id="fname" name="fname" placeholder="Password">
+    
+            <input type="address" class=" col-md-3 m-3" id="fname" name="fname" placeholder="Address">
+        
+            <input type="text" class=" col-md-3 m-3" id="fname" name="fname" placeholder="Phone number">
+
+            <input type="date" class=" col-md-3 m-3" id="fname" name="fname" placeholder="Date">
+
+            <input type="url" class=" col-md-3 m-3" id="fname" name="fname" placeholder="URL">
+
+            <input type="month" class=" col-md-3 m-3" id="fname" name="fname" placeholder="Month">
+            
+            <input type="file" class=" col-md-3 m-3" id="fname" name="fname" placeholder="File">
+
+            <input type="time" class=" col-md-3 m-3" id="fname" name="fname" placeholder="Time">
+
+            <input type="range" class=" col-md-3 m-3" id="fname" name="fname" placeholder="Range">
+      </div>
+      <div class="container p-5 bg-dark mt-3"> 
+        <div class="row">
+            
+          <button type="button" class="btn btn-primary col-12 col-sm-6 col-l-4 m-4 text-center" data-bs-toggle="modal" data-bs-target="#example1Modal"style="width:120px">Button 1</button>
+
+          <button type="button" class="btn btn-primary col-12 col-sm-6 col-l-4 m-4 text-center" data-bs-toggle="modal" data-bs-target="#example2Modal" style="width:120px">Button 2</button>
+
+          <button type="button" class="btn btn-primary col-12 col-sm-6 col-l-4 m-4 text-center" data-bs-toggle="modal" data-bs-target="#example3Modal" style="width:120px">Button 3</button>
+
+          <button type="button" class="btn btn-primary col-12 col-sm-6 col-l-4 m-4 text-center" data-bs-toggle="modal" data-bs-target="#example4Modal" style="width:120px">Button 4</button>
+
+          <div class="modal fade" id="example1Modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal 1</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">OK</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="example2Modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal 2</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">OK</button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="example3Modal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal 3</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">OK</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="example4Modal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal 4</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">OK</button>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+          <button type="button" class="btn btn-primary col-12 col-sm-6 col-lg-4 m-4 text-center" style="width:120px" >Refresh <i class="fas fa-redo" style="color:black" style="font-size:16px"></i></button>
+
+          <div class="alert alert-warning alert-dismissible" role="alert">
+              <strong>ALERT </strong> Click on close icon. I will disappear.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+         </div>
+      </div>
+</body>
+</html>
